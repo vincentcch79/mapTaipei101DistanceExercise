@@ -12,6 +12,8 @@
 		9FF9AF3D1D2A3232007E75E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9AF3B1D2A3232007E75E4 /* Main.storyboard */; };
 		9FF9AF3F1D2A3232007E75E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9AF3E1D2A3232007E75E4 /* Assets.xcassets */; };
 		9FF9AF421D2A3232007E75E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9AF401D2A3232007E75E4 /* LaunchScreen.storyboard */; };
+		9FF9AF4A1D2A34B5007E75E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF9AF491D2A34B5007E75E4 /* CoreLocation.framework */; };
+		9FF9AF4C1D2A34C2007E75E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF9AF4B1D2A34C2007E75E4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9FF9AF3E1D2A3232007E75E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF9AF411D2A3232007E75E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF9AF431D2A3232007E75E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF9AF491D2A34B5007E75E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9FF9AF4B1D2A34C2007E75E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF9AF4C1D2A34C2007E75E4 /* MapKit.framework in Frameworks */,
+				9FF9AF4A1D2A34B5007E75E4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,8 @@
 		9FF9AF2B1D2A3232007E75E4 = {
 			isa = PBXGroup;
 			children = (
+				9FF9AF4B1D2A34C2007E75E4 /* MapKit.framework */,
+				9FF9AF491D2A34B5007E75E4 /* CoreLocation.framework */,
 				9FF9AF361D2A3232007E75E4 /* MapKitDistanceExercise */,
 				9FF9AF351D2A3232007E75E4 /* Products */,
 			);
@@ -96,6 +104,11 @@
 				TargetAttributes = {
 					9FF9AF331D2A3232007E75E4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
